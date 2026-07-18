@@ -26,4 +26,5 @@ streamlit run dashboard/streamlit_app.py
 - Variant summary
 - Control comparisons
 - Activation-rate bar chart
+- Segment analysis by device type, traffic source, plan type, and country
 - Ship / do-not-ship decision summary

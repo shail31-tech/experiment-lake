@@ -57,3 +57,13 @@ This partitioned layout lets Athena prune data by experiment and date.
 - user segments such as device type, country, traffic source, and plan type
 
 This table is the statistical analysis surface for the A/B test.
+
+## Dashboard Layer
+
+The Streamlit dashboard queries Athena directly. It shows:
+
+- top-line variant summary
+- treatment comparisons versus control
+- sample ratio mismatch status
+- activation rate chart
+- segment analysis by device type, traffic source, plan type, and country

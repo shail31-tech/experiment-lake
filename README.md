@@ -12,7 +12,7 @@ The project simulates product experimentation events, ingests them through an AP
 - Glue Data Catalog tables over partitioned S3 data
 - Athena SQL over event-level and curated Parquet data
 - Python statistical analysis for conversion lift and p-values
-- Streamlit dashboard for experiment decisioning
+- Streamlit dashboard for top-line and segment-level experiment decisioning
 - Cost-aware cloud architecture for a portfolio project
 
 ## Architecture
@@ -27,6 +27,8 @@ Local Event Generator
   -> S3 curated Parquet table
   -> Python analysis and Streamlit dashboard
 ```
+
+See [docs/architecture-diagram.md](docs/architecture-diagram.md) for the Mermaid architecture diagram.
 
 ## Experiment
 
@@ -155,6 +157,8 @@ Start the dashboard:
 ```bash
 make dashboard
 ```
+
+The dashboard includes top-line variant metrics, control comparisons, activation-rate charts, sample ratio checks, and segment analysis by device type, traffic source, plan type, and country.
 
 ## Useful Verification Commands
 
