@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.ruff_cache/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+
+# Data
+data/raw/
+data/processed/
+data/curated/
+data/sample/events.csv
+data/sample/events.jsonl
+data/sample/experiment_assignments.csv
+data/sample/users.csv
+*.parquet
+*.csv
+*.jsonl
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
